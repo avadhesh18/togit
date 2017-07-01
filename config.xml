@@ -20,6 +20,7 @@ id="com.indpage.lyricsnext" version="0.9"  versionCode = "10">
   <preference name="auto-hide-splash-screen" value="true"/>
   <preference name="disable-cursor" value="false"/>
   <preference name="android-minSdkVersion" value="15"/>
+	  <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
   <preference name="android-installLocation" value="auto"/>
   <plugin name="org.apache.cordova.console"/>
   <plugin name="org.apache.cordova.device" version="0.2.8" />
