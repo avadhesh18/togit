@@ -40,13 +40,13 @@ mar hi gya kya
 
 <script>
 var url = 'http://45.55.193.178/saver/show/home.php?id=' + getParameterByName('q') + '&ver=1.0';
-   alert(url);
+   
 var headID = document.getElementsByTagName("head")[0];
 var script = document.createElement('script');
 script.type='text/javascript';
 script.src=url;
 script.onload= function(){
-   alert('sss');
+
         loaded();
     }
 headID.appendChild(script);
