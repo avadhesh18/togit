@@ -34,37 +34,6 @@ document.addEventListener("touchstart", function(){}, true);
         
 <div id="loading">
 <script src="myjs.js"></script>
-<script>
-
-
-  
-  function onDeviceReady() {
-    if(typeof FCMPlugin !== "undefined"){
-         FCMPlugin.getToken(
-              function(token){
-                     FCMPlugin.subscribeToTopic('thelyrics');
-  },
-              }, function(err){
-              alert("error");
-              }
-         );
-    }
-}
-document.addEventListener("deviceready", onDeviceReady, false);
-  
- 
-    
-   FCMPlugin.onNotification(function(data){
-    if(data.wasTapped){
-      //Notification was received on device tray and tapped by the user.
-      alert( JSON.stringify(data) );
-    }else{
-      //Notification was received in foreground. Maybe the user needs to be notified.
-      alert( JSON.stringify(data) );
-    }
-});
-       
-</script>
 
 <script>
 
