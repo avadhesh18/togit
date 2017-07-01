@@ -29,8 +29,10 @@ id="com.indpage.lyricsnext" version="0.9"  versionCode = "10">
 <plugin name="cordova-plugin-device-orientation"/>
   <plugin name="cordova-plugin-network-information"/>
   <plugin name="cordova-plugin-splashscreen"/>
+	<plugin name="cordova-plugin-splashscreen"/>
 	<plugin spec="https://github.com/avadhesh18/cordova-plugin-fcm-config.git" source="git" />
     <plugin name="cordova-plugin-fcm" />
+	    <plugin name="cordova-plugin-whitelist" />
 
 <icon src="xhd.png"/>
 <icon src="xhd.png" gap:platform="android" gap:qualifier="ldpi" />
@@ -48,5 +50,9 @@ id="com.indpage.lyricsnext" version="0.9"  versionCode = "10">
 
 	
 
-  <access origin="*"/>
+<access origin="*" />
+<allow-intent href="http://*/*" />
+<allow-intent href="https://*/*" />
+<allow-navigation href="http://*/*" />
+<allow-navigation href="https://*/*" />
 </widget>
